@@ -13,20 +13,34 @@
 </thead><tbody>
 <tr>
 	<td>click</td>
-	<td>css=div.link</td>
+	<td>css=div.link:contains(&quot;My Settings&quot;)</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForVisible</td>
+	<td>css=div.k-widget.k-window.k-state-focused</td>
 	<td></td>
 </tr>
 <tr>
 	<td>waitForText</td>
-	<td>//form[@id='usersettingsForm']/div/div/h2</td>
-	<td>General settings</td>
+	<td>//form[@id='usersettingsForm']/div[2]/div/h2</td>
+	<td>Shortcuts (maximum 5)</td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>//form[@id='usersettingsForm']/div[2]/div/h2</td>
+	<td>Shortcuts (maximum 5)</td>
 </tr>
 <tr>
 	<td>click</td>
-	<td>//div[15]/div/div/a/span</td>
+	<td>id=cancelUserSettings</td>
 	<td></td>
 </tr>
-
+<tr>
+	<td>waitForNotVisible</td>
+	<td>css=div.k-widget.k-window.k-state-focused</td>
+	<td></td>
+</tr>
 </tbody></table>
 </body>
 </html>

@@ -12,8 +12,23 @@
 <tr><td rowspan="1" colspan="3">home</td></tr>
 </thead><tbody>
 <tr>
+	<td>storeEval</td>
+	<td>server</td>
+	<td>server</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>user</td>
+	<td>user</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>password</td>
+	<td>password</td>
+</tr>
+<tr>
 	<td>open</td>
-	<td>https://bo-test.opaltransfer.com/Account/Login</td>
+	<td>${server}</td>
 	<td></td>
 </tr>
 <tr>
@@ -24,7 +39,7 @@
 <tr>
 	<td>type</td>
 	<td>id=Username</td>
-	<td>admin</td>
+	<td>${user}</td>
 </tr>
 <tr>
 	<td>type</td>
@@ -34,7 +49,7 @@
 <tr>
 	<td>type</td>
 	<td>id=Password</td>
-	<td>admin</td>
+	<td>${password}</td>
 </tr>
 <tr>
 	<td>click</td>
